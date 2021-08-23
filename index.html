@@ -19,15 +19,17 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 <body class="bg-warning position-relativ">
-    <section class="section my-5">
+    <section class="section my-3">
         <div class="wrapper">
             <div class="container">
                 <div class="h1 text-center pb-3">Prototyp</div>
                 <div class="card">
                     <form class="py-3 container" action="">
                         <div class="row">
-                            <h4>1. Ich reduziere meinen Fleischkonsum und möchte an x Tagen die Woche kein Fleisch essen.</h4>
-                            <hr>
+                            <div class="col-12">
+                                <h4>1. Ich reduziere meinen Fleischkonsum und möchte an x Tagen die Woche kein Fleisch essen.</h4>
+                                <hr>
+                            </div>
                         </div>
                         <div class="row veggie">
                             <div class="col-12 col-md-7 py-2">
@@ -46,7 +48,12 @@
                                 Die Durchführung der Challenge für ein Jahr ergibt eine Einsparung von <span class="text-success"><span v-text="veggie_year"></span> kg CO2e.
                             </div>
                         </div>
-                        <hr>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <h4>2. In den nächsten x Wochen kaufe ich y Flaschen weniger Flaschenwasser und trinke dafür Leitungswasser.</h4>
+                                <hr>
+                            </div>
+                        </div>
                         <div class="row water">
                             <div class="col-12 col-md-7 py-2">
                                 <p>Ich kaufe in einer Woche <input class="input-group-number text-primary" type="number" v-model="value_water_day"/> Liter weniger Mineralwasser und trinke dafür Leitungswasser. Daraus errechnet sich eine Einsparung von <span class="text-success"><span v-text="water_day"></span> kg CO2e.</span></p>
@@ -64,7 +71,7 @@
                                 Die Durchführung der Challenge für ein Jahr ergibt eine Einsparung von <span class="text-success"><span v-text="water_year"></span> kg CO2e.
                             </div>
                         </div>
-                        <div class="row my-5">
+                        <div class="row mt-5 mb-2">
                             <h3 class="py3 text-center">Deine gesamte Einsparung beträgt</h3>
                             <h2 class="text-center"><span v-text="total"></span> kg CO2e.</h2>
                         </div>
