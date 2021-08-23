@@ -5,9 +5,24 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     minify       = require('gulp-minify'),
     concat       = require('gulp-concat'),
-    bro          = require('gulp-bro');
+    bro          = require('gulp-bro'),
+	fileinclude = require('gulp-file-include'),
     browserSync  = require('browser-sync').create();
 	// TO DO: add sourcemaps
+
+const paths = {
+	scripts: {
+		src: './',
+		dest: './dist/'
+	}
+};
+
+function includeHTML(){
+	return gulp.src([
+	  '*.html',
+	  ])
+	  .pipe(gulp.dest(paths.scripts.dest));
+}
 
 function sass(done) {
 	gulp.src('./sass/**/*.scss')
@@ -58,6 +73,8 @@ function watchFiles() {
 gulp.task("sass", sass);
 
 gulp.task("js", js);
+
+gulp.task("includeHTML", includeHTML);
 
 gulp.task("browser", browser);
 
