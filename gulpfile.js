@@ -13,7 +13,7 @@ var gulp         = require('gulp'),
 const paths = {
 	scripts: {
 		src: './',
-		dest: './dist/'
+		dest: './'
 	}
 };
 
