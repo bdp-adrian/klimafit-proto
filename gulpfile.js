@@ -6,7 +6,7 @@ var gulp         = require('gulp'),
     minify       = require('gulp-minify'),
     concat       = require('gulp-concat'),
     bro          = require('gulp-bro'),
-	fileinclude = require('gulp-file-include'),
+	fileinclude  = require('gulp-file-include'),
     browserSync  = require('browser-sync').create();
 	// TO DO: add sourcemaps
 

@@ -1,0 +1,51 @@
+.input-group-number {
+    max-width: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.btn {
+    animation: tada 1.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+}
+
+@keyframes tada {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    10%, 20% {
+      -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -2deg);
+      -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -2deg);
+      transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -2deg);
+    }
+  
+    30%, 50%, 70%, 90% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 2deg);
+      -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 2deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 2deg);
+    }
+  
+    40%, 60%, 80% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -2deg);
+      -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -2deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -2deg);
+    }
+  
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+}
